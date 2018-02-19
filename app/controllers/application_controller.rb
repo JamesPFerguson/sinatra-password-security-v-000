@@ -32,7 +32,7 @@ class ApplicationController < Sinatra::Base
 	end
 
 	post "/login" do
-		user = User.find+by(username: params[:username])
+		user = User.find_by(username: params[:username])
 	end
 
 	get "/success" do
